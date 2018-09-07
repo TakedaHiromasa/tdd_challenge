@@ -1,5 +1,7 @@
 import unittest
 from add import Add
+
+
 # from sample import Sample
 #
 #
@@ -26,9 +28,7 @@ from add import Add
 #     unittest.main()
 
 class TestAdd(unittest.TestCase):
-    def test_add(self):
-        add = Add()
-        self.assertEqual(add.add(1, 2), 3)
-
-
-        
+	def test_add(self):
+		add = Add()
+		self.assertEqual(add.add(1, 2), 3)
+		self.assertEqual(add.add(7, 8), 15)
