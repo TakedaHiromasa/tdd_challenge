@@ -18,6 +18,7 @@ class InputTest(unittest.TestCase):
 	def testInput(self):
 		self.assertEqual(self.input_list.input_list(), [[10, 12], [40, 16], [100, 45], [], [50, 50, 55]])
 
+
 class OutputTest(unittest.TestCase):
 	def setUp(self):
 		self.output = io.StringIO()
@@ -25,12 +26,13 @@ class OutputTest(unittest.TestCase):
 
 	def testOutput(self):
 		self.output = self.output_list.output_list([24, 62, 160, 0, 171])
-		self.assertEqual(self.output.getvalue(),"""24
+		self.assertEqual(self.output.getvalue(), """24
 62
 160
 0
 171
 """)
+
 
 class CalcTest(unittest.TestCase):
 	def testCalc(self):

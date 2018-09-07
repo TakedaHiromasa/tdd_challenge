@@ -1,5 +1,3 @@
-import io
-
 class Output_list():
     def __init__(self, io):
         self.io = io
@@ -8,3 +6,4 @@ class Output_list():
         for line in output:
             self.io.write(str(line)+'\n')
         return self.io
+

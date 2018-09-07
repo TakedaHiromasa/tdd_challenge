@@ -2,6 +2,7 @@ import sys
 from input_list import Input_list
 from output_list import Output_list
 
+
 class Calc_price:
 	def __init__(self):
 		pass
@@ -22,6 +23,7 @@ class Calc_price:
 			output.append(self.calc_price(calc_list))
 		return output
 
+
 def calc_tax(input_place, output_place):
 	input_list = Input_list(input_place)
 	output_list = Output_list(output_place)
@@ -30,6 +32,7 @@ def calc_tax(input_place, output_place):
 	input = input_list.input_list()
 	output = calc_price.calc_print(input)
 	output_list.output_list(output)
+
 
 if __name__ == '__main__':
 	calc_tax(sys.stdin, sys.stdout)
