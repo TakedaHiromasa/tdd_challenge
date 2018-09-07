@@ -12,19 +12,9 @@ class Calc_price:
 		result = int(result)
 		return result
 
-	def calc_print(self):
-		result_list = []
-		result_list.append(self.calc_price([10, 12]))
-		result_list.append(self.calc_price([40, 16]))
-		result_list.append(self.calc_price([100, 45]))
-		result_list.append(self.calc_price([50, 50, 55]))
-		result_list.append(self.calc_price([1000]))
-		result_list.append(self.calc_price([20, 40]))
-		result_list.append(self.calc_price([30, 60, 90]))
-		result_list.append(self.calc_price([11, 12, 13]))
-		for result in result_list:
-			print(result)
-
+	def calc_print(self, input_list):
+		for calc_list in input_list:
+			calc_price(calc_list)
 
 if __name__ == '__main__':
 	calc_price = Calc_price()
